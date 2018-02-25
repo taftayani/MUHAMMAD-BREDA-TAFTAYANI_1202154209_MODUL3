@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.breda.belajar.DetailWater">
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="424dp"
+        android:src="@drawable/aqua" />
+
+    <TextView
+        android:id="@+id/title_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="124dp"
+        android:text="TITLE"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/desc_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_detail"
+        android:layout_alignStart="@+id/title_detail"
+        android:layout_below="@+id/title_detail"
+        android:layout_marginTop="20dp"
+        android:text="descripsi minuman" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc_detail"
+        android:layout_marginTop="83dp"
+        android:layout_toEndOf="@+id/desc_detail"
+        android:layout_toRightOf="@+id/desc_detail"
+        android:maxWidth="50dp"
+        android:src="@drawable/ic_empty"
+        android:id="@+id/img_bottle" />
+
+    <ImageButton
+        android:id="@+id/add_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/min_butt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:src="@drawable/ic_add"
+        android:onClick="increase"
+        />
+
+    <ImageButton
+        android:id="@+id/min_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_bottle"
+        android:layout_alignLeft="@+id/desc_detail"
+        android:layout_alignStart="@+id/desc_detail"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/ic_min"
+        android:onClick="decrease"
+        />
+</RelativeLayout>
